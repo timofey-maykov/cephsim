@@ -1,0 +1,1713 @@
+{
+  "allow_crimson": false,
+  "backfillfull_ratio": 0.9,
+  "blocklist": {},
+  "cluster_snapshot": "",
+  "created": "2026-10-23T19:18:48.880447+0000",
+  "crush_node_flags": {},
+  "crush_version": 1,
+  "device_class_flags": {},
+  "epoch": 3,
+  "erasure_code_profiles": {
+    "default": {
+      "k": "2",
+      "m": "2",
+      "plugin": "isa",
+      "technique": "reed_sol_van"
+    }
+  },
+  "flags": "",
+  "flags_num": 0,
+  "flags_set": [],
+  "fsid": "00000000-0000-0000-0000-000000000000",
+  "full_ratio": 0.95,
+  "last_in_change": "0.000000",
+  "last_up_change": "0.000000",
+  "max_osd": 144,
+  "min_compat_client": "jewel",
+  "modified": "0.000000",
+  "nearfull_ratio": 0.85,
+  "new_purged_snaps": [],
+  "new_removed_snaps": [],
+  "osd_xinfo": [],
+  "osds": [
+    {
+      "in": 1,
+      "osd": 0,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 1,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 2,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 3,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 4,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 5,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 6,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 7,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 8,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 9,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 10,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 11,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 12,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 13,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 14,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 15,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 16,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 17,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 18,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 19,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 20,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 21,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 22,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 23,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 24,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 25,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 26,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 27,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 28,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 29,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 30,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 31,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 32,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 33,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 34,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 35,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 36,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 37,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 38,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 39,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 40,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 41,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 42,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 43,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 44,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 45,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 46,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 47,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 48,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 49,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 50,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 51,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 52,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 53,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 54,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 55,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 56,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 57,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 58,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 59,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 60,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 61,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 62,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 63,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 64,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 65,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 66,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 67,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 68,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 69,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 70,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 71,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 72,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 73,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 74,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 75,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 76,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 77,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 78,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 79,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 80,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 81,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 82,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 83,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 84,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 85,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 86,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 87,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 88,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 89,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 90,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 91,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 92,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 93,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 94,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 95,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 96,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 97,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 98,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 99,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 100,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 101,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 102,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 103,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 104,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 105,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 106,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 107,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 108,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 109,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 110,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 111,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 112,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 113,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 114,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 115,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 116,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 117,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 118,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 119,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 120,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 121,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 122,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 123,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 124,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 125,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 126,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 127,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 128,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 129,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 130,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 131,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 132,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 133,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 134,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 135,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 136,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 137,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 138,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 139,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 140,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 141,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 142,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    },
+    {
+      "in": 1,
+      "osd": 143,
+      "primary_affinity": 1,
+      "state": [
+        "exists",
+        "up"
+      ],
+      "up": 1,
+      "weight": 1
+    }
+  ],
+  "pg_temp": [],
+  "pg_upmap": [],
+  "pg_upmap_items": [],
+  "pg_upmap_primaries": [],
+  "pool_max": 1,
+  "pools": [
+    {
+      "application_metadata": {
+        "rbd": {}
+      },
+      "auid": 0,
+      "cache_min_evict_age": 0,
+      "cache_min_flush_age": 0,
+      "cache_mode": "none",
+      "cache_target_dirty_high_ratio_micro": 0,
+      "cache_target_dirty_ratio_micro": 0,
+      "cache_target_full_ratio_micro": 0,
+      "create_time": "0.000000",
+      "crush_rule": 0,
+      "erasure_code_profile": "",
+      "expected_num_objects": 0,
+      "fast_read": false,
+      "flags": 1,
+      "flags_names": "hashpspool",
+      "grade_table": [],
+      "hit_set_count": 0,
+      "hit_set_grade_decay_rate": 0,
+      "hit_set_params": {
+        "type": "none"
+      },
+      "hit_set_period": 0,
+      "hit_set_search_last_n": 0,
+      "is_stretch_pool": false,
+      "last_change": "0",
+      "last_force_op_resend": "0",
+      "last_force_op_resend_preluminous": "0",
+      "last_force_op_resend_prenautilus": "0",
+      "last_pg_merge_meta": {
+        "last_epoch_clean": 0,
+        "last_epoch_started": 0,
+        "ready_epoch": 0,
+        "source_pgid": "0.0",
+        "source_version": "0'0",
+        "target_version": "0'0"
+      },
+      "min_read_recency_for_promote": 0,
+      "min_size": 2,
+      "min_write_recency_for_promote": 0,
+      "nonprimary_shards": "{}",
+      "object_hash": 2,
+      "options": {},
+      "peering_crush_bucket_barrier": 0,
+      "peering_crush_bucket_count": 0,
+      "peering_crush_bucket_mandatory_member": 2147483647,
+      "peering_crush_bucket_target": 0,
+      "pg_autoscale_mode": "on",
+      "pg_num": 4608,
+      "pg_num_pending": 4608,
+      "pg_num_target": 4608,
+      "pg_placement_num": 4608,
+      "pg_placement_num_target": 4608,
+      "pool": 1,
+      "pool_name": "rbd",
+      "pool_snaps": [],
+      "quota_max_bytes": 0,
+      "quota_max_objects": 0,
+      "read_tier": -1,
+      "removed_snaps": "[]",
+      "size": 3,
+      "snap_epoch": 0,
+      "snap_mode": "selfmanaged",
+      "snap_seq": 0,
+      "stripe_width": 0,
+      "target_max_bytes": 0,
+      "target_max_objects": 0,
+      "tier_of": -1,
+      "tiers": [],
+      "type": 1,
+      "use_gmt_hitset": true,
+      "write_tier": -1
+    }
+  ],
+  "primary_temp": [],
+  "range_blocklist": {},
+  "removed_snaps_queue": [],
+  "require_min_compat_client": "unknown",
+  "require_osd_release": "unknown",
+  "stretch_mode": {
+    "degraded_stretch_mode": 0,
+    "recovering_stretch_mode": 0,
+    "stretch_bucket_count": 0,
+    "stretch_mode_bucket": 0,
+    "stretch_mode_enabled": false
+  }
+}

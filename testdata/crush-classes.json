@@ -1,0 +1,1114 @@
+{
+    "devices": [
+        {
+            "id": 0,
+            "name": "osd.0",
+            "class": "ssd"
+        },
+        {
+            "id": 1,
+            "name": "osd.1",
+            "class": "ssd"
+        },
+        {
+            "id": 2,
+            "name": "osd.2",
+            "class": "hdd"
+        },
+        {
+            "id": 3,
+            "name": "osd.3",
+            "class": "hdd"
+        },
+        {
+            "id": 4,
+            "name": "osd.4",
+            "class": "hdd"
+        },
+        {
+            "id": 5,
+            "name": "osd.5",
+            "class": "hdd"
+        },
+        {
+            "id": 6,
+            "name": "osd.6",
+            "class": "hdd"
+        },
+        {
+            "id": 7,
+            "name": "osd.7",
+            "class": "hdd"
+        },
+        {
+            "id": 8,
+            "name": "osd.8",
+            "class": "hdd"
+        },
+        {
+            "id": 9,
+            "name": "osd.9",
+            "class": "hdd"
+        },
+        {
+            "id": 10,
+            "name": "osd.10",
+            "class": "hdd"
+        },
+        {
+            "id": 11,
+            "name": "osd.11",
+            "class": "hdd"
+        },
+        {
+            "id": 12,
+            "name": "osd.12",
+            "class": "ssd"
+        },
+        {
+            "id": 13,
+            "name": "osd.13",
+            "class": "ssd"
+        },
+        {
+            "id": 14,
+            "name": "osd.14",
+            "class": "hdd"
+        },
+        {
+            "id": 15,
+            "name": "osd.15",
+            "class": "hdd"
+        },
+        {
+            "id": 16,
+            "name": "osd.16",
+            "class": "hdd"
+        },
+        {
+            "id": 17,
+            "name": "osd.17",
+            "class": "hdd"
+        },
+        {
+            "id": 18,
+            "name": "osd.18",
+            "class": "hdd"
+        },
+        {
+            "id": 19,
+            "name": "osd.19",
+            "class": "hdd"
+        },
+        {
+            "id": 20,
+            "name": "osd.20",
+            "class": "hdd"
+        },
+        {
+            "id": 21,
+            "name": "osd.21",
+            "class": "hdd"
+        },
+        {
+            "id": 22,
+            "name": "osd.22",
+            "class": "hdd"
+        },
+        {
+            "id": 23,
+            "name": "osd.23",
+            "class": "hdd"
+        },
+        {
+            "id": 24,
+            "name": "osd.24",
+            "class": "ssd"
+        },
+        {
+            "id": 25,
+            "name": "osd.25",
+            "class": "ssd"
+        },
+        {
+            "id": 26,
+            "name": "osd.26",
+            "class": "hdd"
+        },
+        {
+            "id": 27,
+            "name": "osd.27",
+            "class": "hdd"
+        },
+        {
+            "id": 28,
+            "name": "osd.28",
+            "class": "hdd"
+        },
+        {
+            "id": 29,
+            "name": "osd.29",
+            "class": "hdd"
+        },
+        {
+            "id": 30,
+            "name": "osd.30",
+            "class": "hdd"
+        },
+        {
+            "id": 31,
+            "name": "osd.31",
+            "class": "hdd"
+        },
+        {
+            "id": 32,
+            "name": "osd.32",
+            "class": "hdd"
+        },
+        {
+            "id": 33,
+            "name": "osd.33",
+            "class": "hdd"
+        },
+        {
+            "id": 34,
+            "name": "osd.34",
+            "class": "hdd"
+        },
+        {
+            "id": 35,
+            "name": "osd.35",
+            "class": "hdd"
+        },
+        {
+            "id": 36,
+            "name": "osd.36",
+            "class": "ssd"
+        },
+        {
+            "id": 37,
+            "name": "osd.37",
+            "class": "ssd"
+        },
+        {
+            "id": 38,
+            "name": "osd.38",
+            "class": "hdd"
+        },
+        {
+            "id": 39,
+            "name": "osd.39",
+            "class": "hdd"
+        },
+        {
+            "id": 40,
+            "name": "osd.40",
+            "class": "hdd"
+        },
+        {
+            "id": 41,
+            "name": "osd.41",
+            "class": "hdd"
+        },
+        {
+            "id": 42,
+            "name": "osd.42",
+            "class": "hdd"
+        },
+        {
+            "id": 43,
+            "name": "osd.43",
+            "class": "hdd"
+        },
+        {
+            "id": 44,
+            "name": "osd.44",
+            "class": "hdd"
+        },
+        {
+            "id": 45,
+            "name": "osd.45",
+            "class": "hdd"
+        },
+        {
+            "id": 46,
+            "name": "osd.46",
+            "class": "hdd"
+        },
+        {
+            "id": 47,
+            "name": "osd.47",
+            "class": "hdd"
+        }
+    ],
+    "types": [
+        {
+            "type_id": 0,
+            "name": "osd"
+        },
+        {
+            "type_id": 1,
+            "name": "host"
+        },
+        {
+            "type_id": 2,
+            "name": "rack"
+        },
+        {
+            "type_id": 3,
+            "name": "root"
+        }
+    ],
+    "buckets": [
+        {
+            "id": -1,
+            "name": "host0",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 786432,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 0,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 1,
+                    "weight": 65536,
+                    "pos": 1
+                },
+                {
+                    "id": 2,
+                    "weight": 65536,
+                    "pos": 2
+                },
+                {
+                    "id": 3,
+                    "weight": 65536,
+                    "pos": 3
+                },
+                {
+                    "id": 4,
+                    "weight": 65536,
+                    "pos": 4
+                },
+                {
+                    "id": 5,
+                    "weight": 65536,
+                    "pos": 5
+                },
+                {
+                    "id": 6,
+                    "weight": 65536,
+                    "pos": 6
+                },
+                {
+                    "id": 7,
+                    "weight": 65536,
+                    "pos": 7
+                },
+                {
+                    "id": 8,
+                    "weight": 65536,
+                    "pos": 8
+                },
+                {
+                    "id": 9,
+                    "weight": 65536,
+                    "pos": 9
+                },
+                {
+                    "id": 10,
+                    "weight": 65536,
+                    "pos": 10
+                },
+                {
+                    "id": 11,
+                    "weight": 65536,
+                    "pos": 11
+                }
+            ]
+        },
+        {
+            "id": -2,
+            "name": "host1",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 786432,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 12,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 13,
+                    "weight": 65536,
+                    "pos": 1
+                },
+                {
+                    "id": 14,
+                    "weight": 65536,
+                    "pos": 2
+                },
+                {
+                    "id": 15,
+                    "weight": 65536,
+                    "pos": 3
+                },
+                {
+                    "id": 16,
+                    "weight": 65536,
+                    "pos": 4
+                },
+                {
+                    "id": 17,
+                    "weight": 65536,
+                    "pos": 5
+                },
+                {
+                    "id": 18,
+                    "weight": 65536,
+                    "pos": 6
+                },
+                {
+                    "id": 19,
+                    "weight": 65536,
+                    "pos": 7
+                },
+                {
+                    "id": 20,
+                    "weight": 65536,
+                    "pos": 8
+                },
+                {
+                    "id": 21,
+                    "weight": 65536,
+                    "pos": 9
+                },
+                {
+                    "id": 22,
+                    "weight": 65536,
+                    "pos": 10
+                },
+                {
+                    "id": 23,
+                    "weight": 65536,
+                    "pos": 11
+                }
+            ]
+        },
+        {
+            "id": -3,
+            "name": "host2",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 786432,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 24,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 25,
+                    "weight": 65536,
+                    "pos": 1
+                },
+                {
+                    "id": 26,
+                    "weight": 65536,
+                    "pos": 2
+                },
+                {
+                    "id": 27,
+                    "weight": 65536,
+                    "pos": 3
+                },
+                {
+                    "id": 28,
+                    "weight": 65536,
+                    "pos": 4
+                },
+                {
+                    "id": 29,
+                    "weight": 65536,
+                    "pos": 5
+                },
+                {
+                    "id": 30,
+                    "weight": 65536,
+                    "pos": 6
+                },
+                {
+                    "id": 31,
+                    "weight": 65536,
+                    "pos": 7
+                },
+                {
+                    "id": 32,
+                    "weight": 65536,
+                    "pos": 8
+                },
+                {
+                    "id": 33,
+                    "weight": 65536,
+                    "pos": 9
+                },
+                {
+                    "id": 34,
+                    "weight": 65536,
+                    "pos": 10
+                },
+                {
+                    "id": 35,
+                    "weight": 65536,
+                    "pos": 11
+                }
+            ]
+        },
+        {
+            "id": -4,
+            "name": "host3",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 786432,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 36,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 37,
+                    "weight": 65536,
+                    "pos": 1
+                },
+                {
+                    "id": 38,
+                    "weight": 65536,
+                    "pos": 2
+                },
+                {
+                    "id": 39,
+                    "weight": 65536,
+                    "pos": 3
+                },
+                {
+                    "id": 40,
+                    "weight": 65536,
+                    "pos": 4
+                },
+                {
+                    "id": 41,
+                    "weight": 65536,
+                    "pos": 5
+                },
+                {
+                    "id": 42,
+                    "weight": 65536,
+                    "pos": 6
+                },
+                {
+                    "id": 43,
+                    "weight": 65536,
+                    "pos": 7
+                },
+                {
+                    "id": 44,
+                    "weight": 65536,
+                    "pos": 8
+                },
+                {
+                    "id": 45,
+                    "weight": 65536,
+                    "pos": 9
+                },
+                {
+                    "id": 46,
+                    "weight": 65536,
+                    "pos": 10
+                },
+                {
+                    "id": 47,
+                    "weight": 65536,
+                    "pos": 11
+                }
+            ]
+        },
+        {
+            "id": -5,
+            "name": "rack0",
+            "type_id": 2,
+            "type_name": "rack",
+            "weight": 1572864,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": -1,
+                    "weight": 786432,
+                    "pos": 0
+                },
+                {
+                    "id": -2,
+                    "weight": 786432,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -6,
+            "name": "rack1",
+            "type_id": 2,
+            "type_name": "rack",
+            "weight": 1572864,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": -3,
+                    "weight": 786432,
+                    "pos": 0
+                },
+                {
+                    "id": -4,
+                    "weight": 786432,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -7,
+            "name": "root",
+            "type_id": 3,
+            "type_name": "root",
+            "weight": 3145728,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": -5,
+                    "weight": 1572864,
+                    "pos": 0
+                },
+                {
+                    "id": -6,
+                    "weight": 1572864,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -8,
+            "name": "host0~ssd",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 131072,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 0,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 1,
+                    "weight": 65536,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -9,
+            "name": "host1~ssd",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 131072,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 12,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 13,
+                    "weight": 65536,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -10,
+            "name": "rack0~ssd",
+            "type_id": 2,
+            "type_name": "rack",
+            "weight": 262144,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": -8,
+                    "weight": 131072,
+                    "pos": 0
+                },
+                {
+                    "id": -9,
+                    "weight": 131072,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -11,
+            "name": "host2~ssd",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 131072,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 24,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 25,
+                    "weight": 65536,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -12,
+            "name": "host3~ssd",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 131072,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 36,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 37,
+                    "weight": 65536,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -13,
+            "name": "rack1~ssd",
+            "type_id": 2,
+            "type_name": "rack",
+            "weight": 262144,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": -11,
+                    "weight": 131072,
+                    "pos": 0
+                },
+                {
+                    "id": -12,
+                    "weight": 131072,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -14,
+            "name": "root~ssd",
+            "type_id": 3,
+            "type_name": "root",
+            "weight": 524288,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": -10,
+                    "weight": 262144,
+                    "pos": 0
+                },
+                {
+                    "id": -13,
+                    "weight": 262144,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -15,
+            "name": "host0~hdd",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 655360,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 2,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 3,
+                    "weight": 65536,
+                    "pos": 1
+                },
+                {
+                    "id": 4,
+                    "weight": 65536,
+                    "pos": 2
+                },
+                {
+                    "id": 5,
+                    "weight": 65536,
+                    "pos": 3
+                },
+                {
+                    "id": 6,
+                    "weight": 65536,
+                    "pos": 4
+                },
+                {
+                    "id": 7,
+                    "weight": 65536,
+                    "pos": 5
+                },
+                {
+                    "id": 8,
+                    "weight": 65536,
+                    "pos": 6
+                },
+                {
+                    "id": 9,
+                    "weight": 65536,
+                    "pos": 7
+                },
+                {
+                    "id": 10,
+                    "weight": 65536,
+                    "pos": 8
+                },
+                {
+                    "id": 11,
+                    "weight": 65536,
+                    "pos": 9
+                }
+            ]
+        },
+        {
+            "id": -16,
+            "name": "host1~hdd",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 655360,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 14,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 15,
+                    "weight": 65536,
+                    "pos": 1
+                },
+                {
+                    "id": 16,
+                    "weight": 65536,
+                    "pos": 2
+                },
+                {
+                    "id": 17,
+                    "weight": 65536,
+                    "pos": 3
+                },
+                {
+                    "id": 18,
+                    "weight": 65536,
+                    "pos": 4
+                },
+                {
+                    "id": 19,
+                    "weight": 65536,
+                    "pos": 5
+                },
+                {
+                    "id": 20,
+                    "weight": 65536,
+                    "pos": 6
+                },
+                {
+                    "id": 21,
+                    "weight": 65536,
+                    "pos": 7
+                },
+                {
+                    "id": 22,
+                    "weight": 65536,
+                    "pos": 8
+                },
+                {
+                    "id": 23,
+                    "weight": 65536,
+                    "pos": 9
+                }
+            ]
+        },
+        {
+            "id": -17,
+            "name": "rack0~hdd",
+            "type_id": 2,
+            "type_name": "rack",
+            "weight": 1310720,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": -15,
+                    "weight": 655360,
+                    "pos": 0
+                },
+                {
+                    "id": -16,
+                    "weight": 655360,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -18,
+            "name": "host2~hdd",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 655360,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 26,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 27,
+                    "weight": 65536,
+                    "pos": 1
+                },
+                {
+                    "id": 28,
+                    "weight": 65536,
+                    "pos": 2
+                },
+                {
+                    "id": 29,
+                    "weight": 65536,
+                    "pos": 3
+                },
+                {
+                    "id": 30,
+                    "weight": 65536,
+                    "pos": 4
+                },
+                {
+                    "id": 31,
+                    "weight": 65536,
+                    "pos": 5
+                },
+                {
+                    "id": 32,
+                    "weight": 65536,
+                    "pos": 6
+                },
+                {
+                    "id": 33,
+                    "weight": 65536,
+                    "pos": 7
+                },
+                {
+                    "id": 34,
+                    "weight": 65536,
+                    "pos": 8
+                },
+                {
+                    "id": 35,
+                    "weight": 65536,
+                    "pos": 9
+                }
+            ]
+        },
+        {
+            "id": -19,
+            "name": "host3~hdd",
+            "type_id": 1,
+            "type_name": "host",
+            "weight": 655360,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": 38,
+                    "weight": 65536,
+                    "pos": 0
+                },
+                {
+                    "id": 39,
+                    "weight": 65536,
+                    "pos": 1
+                },
+                {
+                    "id": 40,
+                    "weight": 65536,
+                    "pos": 2
+                },
+                {
+                    "id": 41,
+                    "weight": 65536,
+                    "pos": 3
+                },
+                {
+                    "id": 42,
+                    "weight": 65536,
+                    "pos": 4
+                },
+                {
+                    "id": 43,
+                    "weight": 65536,
+                    "pos": 5
+                },
+                {
+                    "id": 44,
+                    "weight": 65536,
+                    "pos": 6
+                },
+                {
+                    "id": 45,
+                    "weight": 65536,
+                    "pos": 7
+                },
+                {
+                    "id": 46,
+                    "weight": 65536,
+                    "pos": 8
+                },
+                {
+                    "id": 47,
+                    "weight": 65536,
+                    "pos": 9
+                }
+            ]
+        },
+        {
+            "id": -20,
+            "name": "rack1~hdd",
+            "type_id": 2,
+            "type_name": "rack",
+            "weight": 1310720,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": -18,
+                    "weight": 655360,
+                    "pos": 0
+                },
+                {
+                    "id": -19,
+                    "weight": 655360,
+                    "pos": 1
+                }
+            ]
+        },
+        {
+            "id": -21,
+            "name": "root~hdd",
+            "type_id": 3,
+            "type_name": "root",
+            "weight": 2621440,
+            "alg": "straw2",
+            "hash": "rjenkins1",
+            "items": [
+                {
+                    "id": -17,
+                    "weight": 1310720,
+                    "pos": 0
+                },
+                {
+                    "id": -20,
+                    "weight": 1310720,
+                    "pos": 1
+                }
+            ]
+        }
+    ],
+    "rules": [
+        {
+            "rule_id": 0,
+            "rule_name": "replicated_rule",
+            "type": 1,
+            "steps": [
+                {
+                    "op": "take",
+                    "item": -7,
+                    "item_name": "root"
+                },
+                {
+                    "op": "chooseleaf_firstn",
+                    "num": 0,
+                    "type": "host"
+                },
+                {
+                    "op": "emit"
+                }
+            ]
+        }
+    ],
+    "tunables": {
+        "choose_local_tries": 0,
+        "choose_local_fallback_tries": 0,
+        "choose_total_tries": 50,
+        "chooseleaf_descend_once": 1,
+        "chooseleaf_vary_r": 1,
+        "chooseleaf_stable": 1,
+        "msr_descents": 100,
+        "msr_collision_tries": 100,
+        "straw_calc_version": 1,
+        "allowed_bucket_algs": 54,
+        "profile": "jewel",
+        "optimal_tunables": 1,
+        "legacy_tunables": 0,
+        "minimum_required_version": "jewel",
+        "require_feature_tunables": 1,
+        "require_feature_tunables2": 1,
+        "has_v2_rules": 0,
+        "require_feature_tunables3": 1,
+        "has_v3_rules": 0,
+        "has_v4_buckets": 1,
+        "require_feature_tunables5": 1,
+        "has_v5_rules": 0,
+        "has_msr_rules": 0
+    },
+    "choose_args": {}
+}
+
