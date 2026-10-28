@@ -74,3 +74,7 @@ go install github.com/timofey-maykov/cephsim@latest   # или из клона: 
 | [docs/calibration.md](docs/calibration.md) | откуда берутся скорость слота и клиентская нагрузка, модель mClock |
 | [docs/accuracy.md](docs/accuracy.md) | как проверена точность, что не проверено, ограничения |
 | [docs/development.md](docs/development.md) | устройство кода, тесты, фикстуры |
+
+## Лицензия
+
+MIT, см. [LICENSE](LICENSE).
