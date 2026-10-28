@@ -112,6 +112,7 @@ type Meta struct {
 	// Ceph не выводит в out OSD целого отказавшего бакета этого типа и выше
 	DownOutSubtreeLimit string  `json:"mon_osd_down_out_subtree_limit,omitempty"`
 	MinInRatio          float64 `json:"mon_osd_min_in_ratio,omitempty"`
+	DownOutInterval     int     `json:"mon_osd_down_out_interval,omitempty"` // секунды
 }
 
 type Snapshot struct {

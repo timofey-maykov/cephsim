@@ -492,6 +492,9 @@ func cmdCollect(args []string) error {
 		if b, err := run("", "config", "get", "mon", "mon_osd_min_in_ratio"); err == nil {
 			meta.MinInRatio, _ = strconv.ParseFloat(strings.TrimSpace(string(b)), 64)
 		}
+		if b, err := run("", "config", "get", "mon", "mon_osd_down_out_interval"); err == nil {
+			meta.DownOutInterval, _ = strconv.Atoi(strings.TrimSpace(string(b)))
+		}
 	}
 	meta.MClock = collectMClock(run, *out)
 	mb, _ := json.MarshalIndent(meta, "", "  ")

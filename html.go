@@ -1011,7 +1011,13 @@ func friendlyCluster(s *Snapshot, cr *ClusterReport, d *clusterHTML) {
 				bad++
 			}
 		}
-		if bad == 0 {
+		failBad := false
+		for _, h := range hosts {
+			failBad = failBad || h.FailLevel != LevelOK
+		}
+		if bad == 0 && failBad {
+			d.FAQ = append(d.FAQ, faq{"Можно ли прямо сейчас выключить хост на обслуживание?", "Да, любой, если выключать с noout - команда ceph orch host maintenance enter ставит его сама. Тогда данные хоста остаются на месте и никуда не переезжают. Внезапный отказ - другой случай, он в следующем вопросе.", "ok"})
+		} else if bad == 0 {
 			d.FAQ = append(d.FAQ, faq{"Можно ли прямо сейчас выключить хост на обслуживание?", "Да, любой - данные останутся доступны.", "ok"})
 		} else {
 			d.FAQ = append(d.FAQ, faq{"Можно ли прямо сейчас выключить хост на обслуживание?", fmt.Sprintf("Не любой: %d из %d нельзя даже с noout.", bad, len(hosts)), "bad"})
@@ -1036,16 +1042,40 @@ func friendlyCluster(s *Snapshot, cr *ClusterReport, d *clusterHTML) {
 			}
 		}
 		w := typeWord[t]
-		q := fmt.Sprintf("Переживёт ли кластер внезапный отказ одного %s?", w[1])
+		q := fmt.Sprintf("Переживёт ли кластер внезапный отказ %s?", one(t))
 		switch {
 		case len(bad) > 0:
-			d.FAQ = append(d.FAQ, faq{q, fmt.Sprintf("Не любого: опасен отказ %s.", short3(bad)), "bad"})
+			lost, writes := false, false
+			for _, x := range ds {
+				if x.FailLevel == LevelBad {
+					lost = lost || x.FailInactive+x.FailIncomplete > 0
+					writes = writes || x.FailFull > 0
+				}
+			}
+			why := "на остальных не хватит места, и восстановление копий не завершится"
+			switch {
+			case lost:
+				why = "часть данных станет недоступной"
+			case writes:
+				why = "на остальных не хватит места, и Ceph остановит запись"
+			}
+			var ans string
+			if len(bad) == len(ds) {
+				ans = fmt.Sprintf("Нет. После отказа %s %s.", map[bool]string{true: "любой стойки", false: "любого " + w[1]}[t == "rack"], why)
+			} else {
+				ans = fmt.Sprintf("Не %s. Если откажет %s из этих - %s (%d из %d), %s.", map[bool]string{true: "любой", false: "любого"}[t == "rack"],
+					map[bool]string{true: "одна", false: "один"}[t == "rack"], short3(bad), len(bad), len(ds), why)
+			}
+			if !lost && (!hasLimit || s.Placement.Crush.Types[t] < limit) {
+				ans += fmt.Sprintf(" В отличие от обслуживания с noout, при отказе Ceph сам начинает переносить данные через %s.", downOutInterval(s))
+			}
+			d.FAQ = append(d.FAQ, faq{q, ans, "bad"})
 		case len(warn) > 0 && hasLimit && s.Placement.Crush.Types[t] >= limit:
 			d.FAQ = append(d.FAQ, faq{q, fmt.Sprintf("Да, данные останутся доступны. Но если после отказа %s вручную вывести его диски (out), места на остальных не хватит.", plural(len(warn), "этого "+w[1], "такого "+w[1], "такого "+w[1])), "warn"})
 		case len(warn) > 0:
 			d.FAQ = append(d.FAQ, faq{q, fmt.Sprintf("Данные останутся доступны, но после отказа %s места будет впритык.", short3(warn)), "warn"})
 		default:
-			a := "Да, любого: данные останутся доступны."
+			a := map[bool]string{true: "Да, любой: данные останутся доступны.", false: "Да, любого: данные останутся доступны."}[t == "rack"]
 			if maxT > 0 {
 				a += fmt.Sprintf(" Ceph восстановит копии сам, максимум за %s.", dur(maxT))
 			}
@@ -1058,8 +1088,19 @@ func friendlyCluster(s *Snapshot, cr *ClusterReport, d *clusterHTML) {
 	} else if cr.FillMax >= cr.Ratios[0]-0.1 {
 		space = "warn"
 	}
-	d.FAQ = append(d.FAQ, faq{"Хватает ли места?", fmt.Sprintf("Занято %s ёмкости. Самый заполненный диск - %s при пороге предупреждения %.0f%%; до него ещё около %s сырого места.",
-		pct1(float64(cr.RawUsed)/float64(max(cr.RawTotal, 1))), pct1(cr.FillMax), cr.Ratios[0]*100, bytesH(cr.Headroom)), space})
+	spaceA := fmt.Sprintf("Занято %s ёмкости. Самый заполненный диск - %s при пороге предупреждения %.0f%%; до него ещё около %s сырого места.",
+		pct1(float64(cr.RawUsed)/float64(max(cr.RawTotal, 1))), pct1(cr.FillMax), cr.Ratios[0]*100, bytesH(cr.Headroom))
+	for _, x := range cr.Domains {
+		auto := !hasLimit || s.Placement.Crush.Types[x.Type] < limit
+		if auto && x.FailBFull > 0 && x.FailInactive+x.FailIncomplete == 0 {
+			spaceA += " Для обычной работы хватает, но после отказа оборудования места может не хватить - это в рисках ниже."
+			if space == "ok" {
+				space = "warn"
+			}
+			break
+		}
+	}
+	d.FAQ = append(d.FAQ, faq{"Хватает ли места?", spaceA, space})
 	if r := cr.Rolling; r != nil && len(r.Batches) > 0 {
 		d.FAQ = append(d.FAQ, faq{"Сколько займёт обслуживание всех хостов?", fmt.Sprintf("Около %s: %d %s по %s на работы. План - ниже.", dur(r.Total), len(r.Batches), plural(len(r.Batches), "заход", "захода", "заходов"), dur(cr.Scenario.Window)), "info"})
 	}
@@ -1073,7 +1114,7 @@ func friendlyCluster(s *Snapshot, cr *ClusterReport, d *clusterHTML) {
 		}
 	}
 	if two+three > 0 {
-		lv, a := "ok", fmt.Sprintf("Все %s данных хранятся так, что один отказ не мешает записи и не ставит данные под угрозу.", bytesH(two+three))
+		lv, a := "ok", fmt.Sprintf("Все %s данных Ceph пишет минимум в две копии одновременно (min_size 2 и выше): даже пока одна копия недоступна, записанное не окажется в единственном экземпляре.", bytesH(two+three))
 		if two > 0 {
 			lv = "warn"
 			a = fmt.Sprintf("%.0f%% данных (%s) хранятся так, что при одном отказе запись идёт в единственную копию; остальные %s - надёжно.", float64(two)*100/float64(two+three), bytesH(two), bytesH(three))
