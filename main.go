@@ -14,6 +14,9 @@ import (
 	"time"
 )
 
+// version задаётся при сборке: go build -ldflags "-X main.version=0.1.0".
+var version = "dev"
+
 const usage = `cephsim - симулятор изменений и отказов Ceph на копии osdmap
 
   cephsim collect   -o DIR                    снять снимок кластера (нужен доступ к ceph CLI)
@@ -21,6 +24,7 @@ const usage = `cephsim - симулятор изменений и отказов
   cephsim simulate  -snap DIR -action A -target T [флаги]
   cephsim verify    -snap DIR                   сверить раскладку с osdmaptool и pg ls
   cephsim report    -snap DIR > cluster.html    карта рисков: отказ и обслуживание каждого хоста и домена, rolling, место
+  cephsim version                               версия
 
 Действия (-action):
   maintenance   хост выключается на окно работ и возвращается (-noout, -window)
@@ -61,6 +65,9 @@ func main() {
 		err = cmdVerify(os.Args[2:])
 	case "report":
 		err = cmdReport(os.Args[2:])
+	case "version", "-version", "--version":
+		fmt.Println("cephsim", version)
+		return
 	case "-h", "--help", "help":
 		fmt.Print(usage)
 		return

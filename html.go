@@ -525,7 +525,7 @@ const htmlTemplate = `<!doctype html>
 
 <div class="kpis">{{range .KPIs}}<div class="kpi {{.Level}}"><div class="l">{{.Label}}</div><div class="v">{{.Value}}</div><div class="n">{{.Note}}</div></div>{{end}}</div>
 
-{{if .GanttSVG}}<section class="card"><h2>Расписание</h2>{{.GanttSVG}}
+{{if .GanttSVG}}<section class="card" id="schedule"><h2>Расписание</h2>{{.GanttSVG}}
 <p class="note">Синий - окно работ партии, оранжевый - догон записей после возврата хостов. Между партиями - пауза.</p>
 <div class="tw"><table><thead><tr><th>№</th><th>старт</th><th>хосты</th><th class="r">OSD</th><th class="r">degraded</th><th class="r">без запаса</th><th class="r">догон</th></tr></thead><tbody>
 {{range .Batches}}<tr class="ok"><td>{{.N}}</td><td>{{.Start}}</td><td>{{.Hosts}}</td><td class="r">{{.OSDs}}</td><td class="r">{{num .Degraded}}</td><td class="r">{{num .AtRisk}}</td><td class="r">{{.Catchup}}</td></tr>{{end}}
@@ -533,19 +533,19 @@ const htmlTemplate = `<!doctype html>
 {{if .Blocked}}<h2 style="margin-top:16px">Нельзя выключать даже поодиночке</h2><ul class="blocked">{{range .Blocked}}<li><b>{{.Host}}</b>: {{.Inactive}} inactive, {{.Incomplete}} incomplete{{if eq .FromUndersized (add .Inactive .Incomplete)}} - только из-за PG, неполных уже сейчас: дождаться HEALTH_OK{{else}} - сначала drain или исправить правила пулов{{end}}</li>{{end}}</ul>{{end}}
 </section>{{end}}
 
-{{if .Tree}}<section class="card"><h2>Кластер</h2><div class="tree">{{range .Tree}}{{template "box" .}}{{end}}</div>
+{{if .Tree}}<section class="card" id="cluster"><h2>Кластер</h2><div class="tree">{{range .Tree}}{{template "box" .}}{{end}}</div>
 <div class="legend">{{range .TreeLegend}}<span class="chip {{.Class}}">{{.Name}}</span>{{end}}</div>
 <p class="note">У каждого хоста - максимальная заполненность его OSD после работ.</p></section>{{end}}
 
-{{if .FillSVG}}<section class="card"><h2>Заполненность OSD</h2>{{.FillSVG}}<p class="note">{{.FillNote}}</p></section>{{end}}
+{{if .FillSVG}}<section class="card" id="fill"><h2>Заполненность OSD</h2>{{.FillSVG}}<p class="note">{{.FillNote}}</p></section>{{end}}
 
-{{if .CurveSVG}}<section class="card"><h2>Ход переезда</h2>{{.CurveSVG}}<p class="note">{{.Bottleneck}} {{.CurveNote}}</p></section>{{else if .Bottleneck}}<section class="card"><h2>Узкое место</h2><p>{{.Bottleneck}}</p></section>{{end}}
+{{if .CurveSVG}}<section class="card" id="progress"><h2>Ход переезда</h2>{{.CurveSVG}}<p class="note">{{.Bottleneck}} {{.CurveNote}}</p></section>{{else if .Bottleneck}}<section class="card"><h2>Узкое место</h2><p>{{.Bottleneck}}</p></section>{{end}}
 
 {{if .Clients}}<section class="card"><h2>Клиенты во время recovery (mClock)</h2><div class="tw"><table><thead><tr><th>класс</th><th>нагрузка на OSD</th><th class="r">нужно клиентам</th><th class="r">профиль даёт</th><th class="r">остаётся recovery</th></tr></thead><tbody>
 {{range .Clients}}<tr class="{{if .Starved}}warn{{else}}ok{{end}}"><td>{{.Class}}</td><td>{{.Load}}</td><td class="r">{{.Demand}}</td><td class="r">{{.Cap}}</td><td class="r">{{.Rec}}</td></tr>{{end}}
 </tbody></table></div><p class="note">Доли ёмкости OSD по модели mClock. Если клиентам нужно больше, чем даёт профиль, во время recovery у них вырастут задержки.</p></section>{{end}}
 
-{{if .Variants}}<section class="card"><h2>Варианты</h2><div class="tw"><table><thead><tr><th>вариант</th><th class="r">переедет</th><th class="r">время</th><th>итог</th></tr></thead><tbody>
+{{if .Variants}}<section class="card" id="variants"><h2>Варианты</h2><div class="tw"><table><thead><tr><th>вариант</th><th class="r">переедет</th><th class="r">время</th><th>итог</th></tr></thead><tbody>
 {{range .Variants}}<tr class="{{if .Best}}best {{end}}{{lvl .Verdict}}"><td>{{.Name}}{{if .Best}} - рекомендуем{{end}}</td><td class="r">{{bytes .Moved}}</td><td class="r">{{if .Stalled}}не завершится{{else}}{{dur .Time}}{{end}}</td><td><span class="pill {{lvl .Verdict}}">{{lvl .Verdict}}</span></td></tr>{{end}}
 </tbody></table></div></section>{{end}}
 
@@ -854,9 +854,9 @@ const clusterTemplate = `<!doctype html>
 
 <section class="card short {{.Verdict}}"><div class="sl">Коротко</div><p>{{g .Short}}</p></section>
 
-<section class="card"><h2>Ответы на частые вопросы</h2><div class="faq">{{range .FAQ}}<div class="fq {{.Level}}"><div class="q">{{.Q}}</div><div class="a"><span class="dot"></span>{{g .A}}</div></div>{{end}}</div></section>
+<section class="card" id="faq"><h2>Ответы на частые вопросы</h2><div class="faq">{{range .FAQ}}<div class="fq {{.Level}}"><div class="q">{{.Q}}</div><div class="a"><span class="dot"></span>{{g .A}}</div></div>{{end}}</div></section>
 
-{{range .RiskGroups}}<h2 class="gh {{.Class}}">{{.Title}} <span>{{len .Risks}} · {{.Hint}}</span></h2>
+{{range .RiskGroups}}<h2 class="gh {{.Class}}" id="risks-{{.Class}}">{{.Title}} <span>{{len .Risks}} · {{.Hint}}</span></h2>
 {{range .Risks}}<section class="risk {{lvl .Level}}"><div class="rt"><span class="ri">{{if eq (lvl .Level) "ok"}}✔{{else if eq (lvl .Level) "warn"}}▲{{else}}✖{{end}}</span>{{.Title}}</div>
 <p><b>{{if eq (lvl .Level) "ok"}}Что известно.{{else}}Чем грозит.{{end}}</b> {{g .Impact}}</p>
 {{if .Action}}<p class="rh"><b>{{if eq (lvl .Level) "ok"}}Как делать.{{else}}Что сделать.{{end}}</b></p><ul>{{range .Action}}<li>{{g .}}</li>{{end}}</ul>{{end}}
@@ -865,7 +865,7 @@ const clusterTemplate = `<!doctype html>
 
 <div class="kpis">{{range .KPIs}}<div class="kpi {{.Level}}"><div class="l">{{.Label}}</div><div class="v">{{.Value}}</div><div class="n">{{.Note}}</div></div>{{end}}</div>
 
-<section class="card"><h2>Карта отказов</h2><div class="tree">{{range .Tree}}{{template "rbox" .}}{{end}}</div>
+<section class="card" id="map"><h2>Карта отказов</h2><div class="tree">{{range .Tree}}{{template "rbox" .}}{{end}}</div>
 <div class="legend"><span class="chip lv-ok">✔ переживает</span><span class="chip lv-warn">▲ с условиями</span><span class="chip lv-bad">✖ опасно</span></div>
 <p class="note">Цвет хоста - худшее из двух для здорового кластера: обслуживание с noout («обсл.») и внезапный отказ («отказ»). «сейчас ✖» - пока идёт recovery, выключать нельзя. Рамка ряда или стойки - что будет при потере всего этого домена. Наведите на хост, чтобы увидеть детали.</p></section>
 
@@ -875,7 +875,7 @@ const clusterTemplate = `<!doctype html>
 </tbody></table></div>{{end}}
 <p class="note">Обслуживание - хост или домен выключается с noout, данные не двигаются. Отказ - OSD выходят в out, CRUSH перекладывает данные на остальные; время - до конца recovery на узком месте. Обе колонки - для здорового кластера (как после HEALTH_OK). «Сейчас» - сколько PG станут недоступны при выключении прямо сейчас, с учётом идущего recovery.</p></details>
 
-{{if .GanttSVG}}<section class="card"><h2>План обслуживания всех хостов</h2>{{.GanttSVG}}
+{{if .GanttSVG}}<section class="card" id="maintenance"><h2>План обслуживания всех хостов</h2>{{.GanttSVG}}
 <p class="note">Партии - хосты, которые можно выключить вместе без недоступных PG. Синий - окно работ, оранжевый - догон записей.</p>
 {{with .Rolling}}<div class="tw"><table><thead><tr><th>№</th><th>старт</th><th>хосты</th><th class="r">OSD</th><th class="r">без запаса</th><th class="r">догон</th></tr></thead><tbody>
 {{range .Batches}}<tr class="ok"><td>{{.N}}</td><td>{{.Start}}</td><td>{{.Hosts}}</td><td class="r">{{.OSDs}}</td><td class="r">{{num .AtRisk}}</td><td class="r">{{.Catchup}}</td></tr>{{end}}</tbody></table></div>
